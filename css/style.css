@@ -64,13 +64,17 @@ nav li {
     font-size: 1.25rem;
     margin: 0;
 }
+
 /* header start */
 #header {
-    width: 1400px;
+    width: 1200px;
     height: 80px;
     margin: 0;
 }
 
+.icon-menu i {
+    margin-top: -150px;
+}
  .logo img:nth-child(1){
      width: 40px;
      height: 36px;
@@ -85,11 +89,13 @@ nav li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav-menu{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    
 }
 
 .nav-menu li {
@@ -139,6 +145,7 @@ nav li {
     color: #fff;
 }
 /*header end */
+
 
 /* work start*/
 
@@ -801,15 +808,52 @@ nav li {
     border-radius: 5px;
 }
 /* footer end */
-
-@media (max-width: 28rem) {
-     .header .menu {
-        width: 411px;
-        height: 70px;
-    }
-    .menu .navbar .nav-menu {
+@media (min-width:576px){
+    .icon-menu i {
         display: none;
     }
+}
+
+@media(max-width: 576px) {
+
+    /* header start */
+#header {
+    width: 411px;
+    height: 70px;
+    margin: 0;
+}
+
+.container {
+    width: 370px;
+    height: 70px;
+    margin: 0 auto;
+}
+ .logo img:nth-child(1){
+     width: 40px;
+     height: 36px;
+ }
+
+.logo img:nth-child(2){
+    width: 122px;
+    height: 28px;
+}
+
+.menu {
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon-menu i {
+  width: 28px;
+  height: 31px;
+}
+
+.nav-menu{
+    display: none;   
+}
+/*header end */
 }
 
 
